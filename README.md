@@ -59,6 +59,10 @@
         <div class="card" id="message-screen">
             <div class="icon-heart">💖</div>
             <h2>إلى keke 🤍</h2>
+
+<img src="keke.jpg" alt="keke" onerror="this.src='keke.jpeg'; this.onerror=function(){this.src='keke.gbeg';}">
+
+
             
             <!-- عرض الصورة بالامتداد الصحيح JPEG -->
             <div class="photo-container">
