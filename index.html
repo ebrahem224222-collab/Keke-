@@ -29,7 +29,8 @@
         .timer-label { font-size: 11px; color: #ccc; margin-top: 2px; display: block; }
 
         .message-box { background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 20px 15px; margin: 20px 0 10px 0; border: 1px dashed rgba(255, 182, 193, 0.4); }
-        .main-message { font-size: 18px; font-weight: bold; line-height: 1.8; color: #ffffff; }
+        .main-message { font-size: 17px; font-weight: bold; line-height: 1.8; color: #ffffff; margin-bottom: 15px; }
+        .extra-message { font-size: 16px; color: #ffb3c1; line-height: 1.7; font-weight: bold; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 12px; }
     </style>
 </head>
 <body>
@@ -59,6 +60,10 @@
             <div class="message-box">
                 <div class="main-message">
                     مهما حصل بينا من خلافات أنتِ عندي أهم حد في الدنيا وعمري ما استغني عنك.. متزعلش مني أنا ماليش غيرك 🤍
+                </div>
+                <div class="extra-message">
+                    🤍🤍زي ما انتي، انتي عندي زي ما انتي<br>
+                    الغلاوة هي هي والمشاعر متدارية🤍🤍
                 </div>
             </div>
 
@@ -101,7 +106,7 @@
         });
 
         function startCounter() {
-            const startDate = new Date("2019-06-06T00:00:00");
+            const startDate = new Date("2020-06-06T00:00:00");
 
             function update() {
                 const now = new Date();
