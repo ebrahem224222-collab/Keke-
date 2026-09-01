@@ -31,6 +31,9 @@
         .message-box { background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 20px 15px; margin: 20px 0 10px 0; border: 1px dashed rgba(255, 182, 193, 0.4); }
         .main-message { font-size: 17px; font-weight: bold; line-height: 1.8; color: #ffffff; margin-bottom: 15px; }
         .extra-message { font-size: 16px; color: #ffb3c1; line-height: 1.7; font-weight: bold; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 12px; }
+
+        .photo-container { margin: 20px 0; }
+        .photo-container img { width: 100%; max-width: 300px; border-radius: 16px; border: 2px solid rgba(255, 179, 193, 0.4); box-shadow: 0 10px 25px rgba(0,0,0,0.4); margin: 0 auto 10px auto; display: block; }
     </style>
 </head>
 <body>
@@ -57,6 +60,11 @@
             <div class="icon-heart">💖</div>
             <h2>إلى keke 🤍</h2>
             
+            <!-- عرض الصورة بالامتداد الصحيح JPEG -->
+            <div class="photo-container">
+                <img src="keke.jpeg" alt="keke" onerror="this.src='keke.jpg'; this.onerror=function(){this.src='Keke2.jpeg';}">
+            </div>
+
             <div class="message-box">
                 <div class="main-message">
                     مهما حصل بينا من خلافات أنتِ عندي أهم حد في الدنيا وعمري ما استغني عنك.. متزعلش مني أنا ماليش غيرك 🤍
