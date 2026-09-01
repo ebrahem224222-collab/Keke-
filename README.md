@@ -22,7 +22,6 @@
         .error-msg { color: #ff6b6b; font-size: 13px; margin-top: 12px; display: none; }
         #message-screen { display: none; opacity: 0; }
 
-        /* تنسيق العداد */
         .timer-title { font-size: 15px; color: #ffd1dc; margin-top: 20px; margin-bottom: 10px; font-weight: bold; }
         .timer-container { display: flex; justify-content: space-between; margin: 15px 0; gap: 5px; }
         .timer-box { background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(255, 182, 193, 0.3); padding: 10px 5px; border-radius: 12px; flex: 1; text-align: center; }
@@ -30,7 +29,8 @@
         .timer-label { font-size: 11px; color: #ccc; margin-top: 2px; display: block; }
 
         .message-box { background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 20px 15px; margin: 20px 0 10px 0; border: 1px dashed rgba(255, 182, 193, 0.4); }
-        .main-message { font-size: 18px; font-weight: bold; line-height: 1.8; color: #ffffff; }
+        .main-message { font-size: 17px; font-weight: bold; line-height: 1.8; color: #ffffff; margin-bottom: 15px; }
+        .extra-message { font-size: 16px; color: #ffb3c1; line-height: 1.7; font-weight: bold; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 12px; }
     </style>
 </head>
 <body>
@@ -38,7 +38,7 @@
     <div class="bg-hearts" id="bgHearts"></div>
 
     <div class="container">
-        <!-- شاشة إدخال كلمة السر -->
+        <!-- شاشة كلمة السر -->
         <div class="card" id="login-screen">
             <div class="icon-heart">🔒✨</div>
             <h2>إلى keke</h2>
@@ -61,9 +61,12 @@
                 <div class="main-message">
                     مهما حصل بينا من خلافات أنتِ عندي أهم حد في الدنيا وعمري ما استغني عنك.. متزعلش مني أنا ماليش غيرك 🤍
                 </div>
+                <div class="extra-message">
+                    🤍🤍زي ما انتي، انتي عندي زي ما انتي<br>
+                    الغلاوة هي هي والمشاعر متدارية🤍🤍
+                </div>
             </div>
 
-            <!-- العداد التراكمي -->
             <div class="timer-title">الوقت اللي قضيناه سوا مع بعض ✨</div>
             <div class="timer-container">
                 <div class="timer-box"><span class="timer-num" id="years">0</span><span class="timer-label">سنة</span></div>
@@ -102,9 +105,8 @@
             if (e.key === "Enter") checkPassword();
         });
 
-        // حساب الوقت منذ 6 يونيو 2019
         function startCounter() {
-            const startDate = new Date("2019-06-06T00:00:00");
+            const startDate = new Date("2020-06-06T00:00:00");
 
             function update() {
                 const now = new Date();
